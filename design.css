@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fb; /* Very light blue-gray */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calendar container */
+.calendar-container {
+    width: 600px; /* Increased width */
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Calendar header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    color: #333;
+    font-size: 24px; /* Increased font size */
+}
+
+/* Navigation buttons */
+button {
+    background-color: #e0e0ea; /* Light grayish-blue */
+    border: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #dfdfe9; /* Light grayish-lavender */
+}
+
+/* Links inside buttons */
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Calendar grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px; /* Increased grid gap */
+}
+
+/* Day labels */
+.day {
+    background-color: #e1e1eb; /* Light grayish-blue */
+    padding: 15px; /* Increased padding */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Days grid */
+.day-cell {
+    padding: 25px; /* Increased padding for larger day cells */
+    text-align: center;
+    background-color: #dfdfe9; /* Light grayish-lavender */
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.day-cell:hover {
+    background-color: #cf7af7; /* Light grayish-blue on hover */
+}
+
+/* Non-current month days */
+.day-cell.inactive {
+    background-color: #f5f6fb; /* Very light blue-gray */
+    color: #b3b3b3;
+}
+
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #e0e0ea; /* Light grayish-blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-form button:hover {
+    background-color: #dedee8; /* Light grayish-lavender */
+}
+
+/* Error message */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Highlighted day */
+.day-cell.highlighted {
+    background-color: #f0ad4e; /* Highlight color */
+    color: white;
+}
