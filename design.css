@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f6fb; /* Very light blue-gray */
+    background-color: #f5f6fb; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,16 +9,16 @@ body {
     height: 100vh;
 }
 
-/* Calendar container */
+
 .calendar-container {
-    width: 600px; /* Increased width */
-    background-color: #ffffff; /* White */
+    width: 600px;
+    background-color: #ffffff; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
-/* Calendar header */
+
 .calendar-header {
     display: flex;
     justify-content: space-between;
@@ -28,12 +28,12 @@ body {
 
 .calendar-header h2 {
     color: #333;
-    font-size: 24px; /* Increased font size */
+    font-size: 24px; 
 }
 
-/* Navigation buttons */
+
 button {
-    background-color: #e0e0ea; /* Light grayish-blue */
+    background-color: #e0e0ea;
     border: none;
     color: #333;
     font-size: 18px;
@@ -43,54 +43,53 @@ button {
 }
 
 button:hover {
-    background-color: #dfdfe9; /* Light grayish-lavender */
-}
+    background-color: #dfdfe9;
 
-/* Links inside buttons */
+
 button a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Calendar grid */
+
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px; /* Increased grid gap */
+    grid-gap: 10px; 
 }
 
-/* Day labels */
+
 .day {
-    background-color: #e1e1eb; /* Light grayish-blue */
-    padding: 15px; /* Increased padding */
+    background-color: #e1e1eb;
+    padding: 15px; 
     text-align: center;
     font-weight: bold;
     border-radius: 5px;
     color: #333;
 }
 
-/* Days grid */
+
 .day-cell {
-    padding: 25px; /* Increased padding for larger day cells */
+    padding: 25px; 
     text-align: center;
-    background-color: #dfdfe9; /* Light grayish-lavender */
+    background-color: #dfdfe9; 
     color: #333;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .day-cell:hover {
-    background-color: #cf7af7; /* Light grayish-blue on hover */
+    background-color: #cf7af7; 
 }
 
-/* Non-current month days */
+
 .day-cell.inactive {
-    background-color: #f5f6fb; /* Very light blue-gray */
+    background-color: #f5f6fb; 
     color: #b3b3b3;
 }
 
 
-/* Search Form */
+
 .search-form {
     display: flex;
     justify-content: center;
@@ -106,7 +105,7 @@ button a {
 
 .search-form button {
     padding: 8px 15px;
-    background-color: #e0e0ea; /* Light grayish-blue */
+    background-color: #e0e0ea; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -114,10 +113,10 @@ button a {
 }
 
 .search-form button:hover {
-    background-color: #dedee8; /* Light grayish-lavender */
+    background-color: #dedee8; 
 }
 
-/* Error message */
+
 .error {
     color: red;
     text-align: center;
